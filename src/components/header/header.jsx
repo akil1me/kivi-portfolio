@@ -14,7 +14,6 @@ export const Header = () => {
   useMotionValueEvent(scrollY, "change", (latest) => {
     setIsScroll(() => latest > 20 && true);
   });
-  console.log(isScroll);
 
   const handleOpen = () => {
     setIsOpen((prev) => !prev);
@@ -37,7 +36,11 @@ export const Header = () => {
       <header className="header">
         <Container>
           <div className="header__inner">
-            <Logo className={`${isOpen ? "logo-nav" : ""}`} />
+            <Logo
+              className={`${isOpen ? "logo-nav" : ""} ${
+                isScroll ? "logo-scroll" : ""
+              }`}
+            />
 
             <div className="flex items-center">
               <Button
