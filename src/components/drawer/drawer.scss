@@ -1,0 +1,65 @@
+.drawer {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 5;
+  animation-name: toBottom;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+  overflow-y: auto;
+}
+.drawer-close {
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+
+.drawer-open {
+  animation-name: toTop;
+}
+
+@keyframes toTop {
+  0% {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  25% {
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    transform-origin: top;
+  }
+  50% {
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    transform-origin: top;
+  }
+  75% {
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    transform-origin: top;
+  }
+  100% {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+}
+
+@keyframes toBottom {
+  0% {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform-origin: bottom;
+  }
+
+  100% {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}

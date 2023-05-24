@@ -1,0 +1,12 @@
+.cursor {
+  position: fixed;
+  width: 582px;
+  height: 582px;
+  background-image: linear-gradient(
+    to left,
+    rgba(226, 182, 113, 0.7),
+    rgba(54, 161, 18, 0.6)
+  );
+  filter: blur(172px);
+  z-index: -1;
+}
