@@ -41,8 +41,8 @@ export const Header = () => {
 
             <div className="flex items-center">
               <Button
-                className={`${
-                  isScroll ? "opacity-none" : isOpen ? "opacity-none" : ""
+                className={`${isScroll ? "opacity-none" : ""} ${
+                  isOpen ? "opacity-none-2" : ""
                 }`}
                 color="#36A112"
               >

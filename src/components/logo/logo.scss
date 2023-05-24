@@ -9,3 +9,9 @@
 .logo-nav {
   color: #e2b671;
 }
+
+@media screen and (max-width: 500px) {
+  .logo {
+    font-size: 24px;
+  }
+}

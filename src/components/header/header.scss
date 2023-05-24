@@ -54,3 +54,30 @@
     transform: translateY(-9px) rotate(-137deg);
   }
 }
+
+@media screen and (max-width: 500px) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px gray solid;
+  }
+  .menu-burger {
+    width: 48px;
+    height: 48px;
+
+    &__line {
+      width: 15px;
+      height: 1.5px;
+    }
+  }
+
+  .menu-burger--open {
+    .menu-burger__line:nth-child(1) {
+      transform: translateY(4px) rotate(137deg);
+    }
+
+    .menu-burger__line:nth-child(3) {
+      transform: translateY(-9px) rotate(-137deg);
+    }
+  }
+}

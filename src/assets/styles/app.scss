@@ -10,3 +10,9 @@
   filter: blur(172px);
   z-index: -1;
 }
+
+@media screen and (max-width: 940px) {
+  .cursor {
+    display: none;
+  }
+}
