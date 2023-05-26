@@ -1,0 +1,52 @@
+.hero {
+  padding-top: 100px;
+  height: 2000px;
+}
+.hero__inner {
+  position: relative;
+}
+
+.hero__img-content {
+  perspective: 1000px;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  max-width: 540px;
+  height: 540px;
+  border-radius: 60px;
+}
+
+.hero__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)
+  );
+  & > img {
+    border-radius: 60px;
+    height: 100% !important;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    padding-top: 50px;
+  }
+  .hero__img-content {
+    height: 60vh;
+    border-radius: 30px;
+  }
+
+  .hero__img {
+    border-radius: 30px;
+    & > img {
+      border-radius: 30px;
+    }
+  }
+}

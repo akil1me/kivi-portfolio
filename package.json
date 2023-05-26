@@ -10,10 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-spring/parallax": "^9.7.2",
+    "@react-spring/web": "^9.7.2",
     "framer-motion": "^10.12.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-parallax": "^3.5.1",
+    "react-parallax-tilt": "^1.7.142",
     "react-router-dom": "^6.11.2",
+    "react-scroll-parallax": "^3.4.2",
+    "react-tilt": "^1.0.2",
     "sass": "^1.62.1",
     "scrollbar-width": "^3.1.1"
   },

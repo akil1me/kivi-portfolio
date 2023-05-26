@@ -33,7 +33,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className="header">
+      <header className={`header ${isOpen ? "header-open" : ""}`}>
         <Container>
           <div className="header__inner">
             <Logo
