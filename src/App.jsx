@@ -23,8 +23,8 @@ const App = () => {
 
   const variants = {
     default: {
-      x: mousePosition.x - 200,
-      y: mousePosition.y - 300,
+      x: mousePosition.x - 290,
+      y: mousePosition.y - 290,
     },
   };
 
@@ -32,8 +32,11 @@ const App = () => {
     <>
       <motion.div
         className="cursor"
-        animate="default"
         variants={variants}
+        animate="default"
+        transition={{
+          duration: 0.7,
+        }}
       ></motion.div>
       <Header />
       <div style={{ height: 1000 }}></div>

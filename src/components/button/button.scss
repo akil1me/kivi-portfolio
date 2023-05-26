@@ -37,12 +37,12 @@
   }
 
   &__line:nth-child(1) {
-    background-image: linear-gradient(to right, transparent 90%, #e2b671 93%);
+    background-image: linear-gradient(to right, transparent 93%, #e2b671 95%);
     top: -100%;
     right: -1px;
   }
   &__line:nth-child(3) {
-    background-image: linear-gradient(to left, transparent 90%, #e2b671 93%);
+    background-image: linear-gradient(to left, transparent 93%, #e2b671 95%);
     bottom: -100%;
     left: -1px;
   }
