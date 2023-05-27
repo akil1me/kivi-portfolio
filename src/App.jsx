@@ -6,19 +6,14 @@ import { useCursor } from "./hooks";
 const App = () => {
   const mousePosition = useCursor();
 
-  const variants = {
-    default: {
-      x: mousePosition.x - 290,
-      y: mousePosition.y - 290,
-    },
-  };
-
   return (
     <>
       <motion.div
         className="cursor"
-        variants={variants}
-        animate="default"
+        animate={{
+          x: mousePosition.x - 290,
+          y: mousePosition.y - 290,
+        }}
         transition={{
           duration: 0.7,
         }}

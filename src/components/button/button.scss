@@ -14,8 +14,9 @@
   transition-delay: 0.5s;
 
   &:hover {
-    border-color: #e2b671;
-    color: #e2b671;
+    background-color: var(--bg);
+    border-color: var(--hover);
+    color: var(--hover);
   }
 
   &__line {

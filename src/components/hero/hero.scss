@@ -1,15 +1,18 @@
 .hero {
-  padding-top: 100px;
   height: 2000px;
 }
 .hero__inner {
+  padding-top: 200px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero__img-content {
   perspective: 1000px;
   position: absolute;
-  top: 100px;
+  top: 200px;
   right: 0;
   left: 0;
   margin: auto;
@@ -28,9 +31,102 @@
     rgba(0, 0, 0, 0.2)
   );
   & > img {
+    transform: 0.3s;
     border-radius: 60px;
     height: 100% !important;
     object-fit: cover;
+  }
+}
+
+.hero__texts {
+  pointer-events: none;
+  font-family: "K2D", sans-serif;
+  font-weight: 800;
+  position: relative;
+  font-size: 170px;
+  line-height: 1;
+}
+.hero__conversion {
+  display: inline-block;
+}
+.hero__through {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: -25%;
+}
+.hero__immersion {
+  display: inline-block;
+  position: relative;
+  right: -20%;
+}
+.hero__button {
+  margin-top: 40px;
+  margin-left: 20px;
+  width: 100% !important;
+  max-width: 289px;
+  pointer-events: painted;
+  color: #fff;
+  background-color: #e2b671;
+  z-index: 1;
+
+  &:hover {
+    border-color: #36a112;
+  }
+}
+.hero__button-bottom {
+  background-color: #e2b671;
+  color: #fff;
+  display: none;
+  z-index: 1;
+  &:hover {
+    border-color: #36a112;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero__texts {
+    font-size: 150px;
+  }
+}
+
+@media screen and (max-width: 965px) {
+  .hero__inner {
+    padding-top: 30vh;
+  }
+  .hero__texts {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 717px) {
+  .hero__texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero__through {
+    margin-left: 0;
+  }
+
+  .hero__button {
+    display: none;
+  }
+  .hero__immersion {
+    position: static;
+  }
+  .hero__button-bottom {
+    margin-top: 20px;
+    display: flex;
+    pointer-events: painted;
+  }
+}
+@media screen and (max-width: 559px) {
+  .hero__inner {
+    padding-top: 30vh;
+  }
+  .hero__texts {
+    font-size: 15vw;
   }
 }
 
@@ -39,6 +135,7 @@
     padding-top: 50px;
   }
   .hero__img-content {
+    top: 100px;
     height: 60vh;
     border-radius: 30px;
   }

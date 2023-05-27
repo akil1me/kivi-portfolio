@@ -48,6 +48,8 @@ export const Header = () => {
                   isOpen ? "opacity-none-2" : ""
                 }`}
                 color="#36A112"
+                hover="#E2B671"
+                bg="transparent"
               >
                 Get in touch
               </Button>

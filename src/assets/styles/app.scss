@@ -4,8 +4,8 @@
   height: 582px;
   background-image: linear-gradient(
     to left,
-    rgba(226, 182, 113, 0.7),
-    rgba(54, 161, 18, 0.6)
+    rgba(226, 182, 113, 0.7) 50%,
+    rgba(54, 161, 18, 0.6) 50%
   );
   filter: blur(172px);
   border-radius: 100px;
@@ -29,6 +29,7 @@
   }
   100% {
     border-radius: 50%;
+
     width: 542px;
     height: 542px;
     filter: blur(160px);
