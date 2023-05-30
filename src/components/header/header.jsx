@@ -50,6 +50,7 @@ export const Header = () => {
                 color="#36A112"
                 hover="#E2B671"
                 bg="transparent"
+                bgLine="#E2B671"
               >
                 Get in touch
               </Button>

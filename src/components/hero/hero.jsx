@@ -1,9 +1,11 @@
 import { Parallax } from "react-parallax";
 import Tilt from "react-parallax-tilt";
-import heroImg from "../../assets/images/hero-img.png";
 import { Container } from "../container";
 import { Button } from "../button";
 import { motion } from "framer-motion";
+
+import heroImg from "../../assets/images/hero-img.png";
+import vector from "../../assets/images/vector.svg";
 
 import "./hero.scss";
 
@@ -51,6 +53,7 @@ export const Hero = () => {
                 color="#E2B671"
                 hover="#fff"
                 bg="#36A112"
+                bgLine="#36A112"
               >
                 Get in touch
               </Button>
@@ -80,6 +83,7 @@ export const Hero = () => {
                 color="#E2B671"
                 hover="#fff"
                 bg="#36A112"
+                bgLine="#E2B671"
               >
                 Get in touch
               </Button>
@@ -87,6 +91,26 @@ export const Hero = () => {
           </div>
         </div>
       </Container>
+
+      <a className="hero__vector vector" href="#link">
+        <span className="vector__border">
+          <span className="vector__img">
+            <svg
+              width="28"
+              height="31"
+              viewBox="0 0 28 31"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.6 3L2 16.4167M14.6 3L26 16.4167M14.6 3V31"
+                stroke="#36A112"
+                stroke-width="3"
+              />
+            </svg>
+          </span>
+        </span>
+      </a>
     </section>
   );
 };

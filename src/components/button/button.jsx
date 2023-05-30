@@ -6,11 +6,17 @@ export const Button = ({
   color = "",
   hover,
   bg = "",
+  bgLine ="",
 }) => {
   return (
     <button
       className={`button ${className}`}
-      style={{ "--color": color, "--hover": hover, "--bg": bg }}
+      style={{
+        "--color": color,
+        "--hover": hover,
+        "--bg": bg,
+        "--bgLine": bgLine,
+      }}
     >
       <span className="button__line"></span>
       <span className="button__line"></span>
