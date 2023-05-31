@@ -53,7 +53,8 @@ export const Hero = () => {
                 color="#E2B671"
                 hover="#fff"
                 bg="#36A112"
-                bgLine="#36A112"
+                bgLine="#fff"
+                width="289"
               >
                 Get in touch
               </Button>
@@ -83,7 +84,8 @@ export const Hero = () => {
                 color="#E2B671"
                 hover="#fff"
                 bg="#36A112"
-                bgLine="#E2B671"
+                bgLine="#fff"
+                width="171"
               >
                 Get in touch
               </Button>

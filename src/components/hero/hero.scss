@@ -63,15 +63,30 @@
 .hero__button {
   margin-top: 40px;
   margin-left: 20px;
-  width: 100% !important;
-  max-width: 289px;
+  width: 289px;
   pointer-events: painted;
   color: #fff;
   background-color: #e2b671;
   z-index: 1;
+  & > .button__svg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: -0.5px;
+    top: -0.5px;
+  }
+  & > .button__svg > rect {
+    width: 289px;
+    stroke-dashoffset: 800;
+    stroke-dasharray: 800;
+    stroke-width: 2;
+  }
 
   &:hover {
     border-color: #36a112;
+  }
+  &:hover > .button__svg > rect {
+    stroke-dashoffset: -800;
   }
 }
 .hero__button-bottom {
@@ -99,7 +114,7 @@
     height: 100%;
     border-radius: 50%;
     border: #36a112 1px solid;
-    transition: 0.4s;
+    transition: 0.8s;
   }
 
   &__img {
@@ -114,7 +129,7 @@
     margin: auto;
 
     & > svg > path {
-      transition: 0.4s;
+      transition: 0.7s;
     }
   }
 }

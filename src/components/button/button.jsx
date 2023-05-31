@@ -6,7 +6,8 @@ export const Button = ({
   color = "",
   hover,
   bg = "",
-  bgLine ="",
+  bgLine = "",
+  width = "",
 }) => {
   return (
     <button
@@ -18,10 +19,36 @@ export const Button = ({
         "--bgLine": bgLine,
       }}
     >
-      <span className="button__line"></span>
-      <span className="button__line"></span>
-      <span className="button__line"></span>
-      <span className="button__line"></span>
+      <svg
+        className="button__svg"
+        width={`${width}`}
+        height="60"
+        viewBox={`0 0 ${width} 60`}
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="0.5"
+          y="0.5"
+          width="170"
+          height="59"
+          rx="29.5"
+          stroke="url(#paint0_linear_1_45)"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear_1_45"
+            x1="144"
+            y1="4.60642e-06"
+            x2="18.5"
+            y2="40"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#E2B671" />
+            <stop offset="1" stop-color="#36A112" />
+          </linearGradient>
+        </defs>
+      </svg>
       <p className="button__text">{children}</p>
     </button>
   );
