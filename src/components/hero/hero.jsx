@@ -5,7 +5,6 @@ import { Button } from "../button";
 import { motion } from "framer-motion";
 
 import heroImg from "../../assets/images/hero-img.png";
-import vector from "../../assets/images/vector.svg";
 
 import "./hero.scss";
 
@@ -107,7 +106,7 @@ export const Hero = () => {
               <path
                 d="M14.6 3L2 16.4167M14.6 3L26 16.4167M14.6 3V31"
                 stroke="#36A112"
-                stroke-width="3"
+                strokeWidth="3"
               />
             </svg>
           </span>

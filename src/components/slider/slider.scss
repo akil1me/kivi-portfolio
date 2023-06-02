@@ -1,0 +1,12 @@
+.slider {
+  margin-top: 400px;
+
+  &__title {
+    max-width: 599px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 38px;
+
+    color: rgba(255, 255, 255, 0.9);
+  }
+}

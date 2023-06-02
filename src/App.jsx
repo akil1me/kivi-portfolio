@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import "./assets/styles/app.scss";
-import { Header, Hero } from "./components";
+import { Header, Hero, Slider } from "./components";
 import { useCursor } from "./hooks";
 
 const App = () => {
@@ -23,6 +23,7 @@ const App = () => {
 
       <main>
         <Hero />
+        <Slider />
       </main>
     </>
   );

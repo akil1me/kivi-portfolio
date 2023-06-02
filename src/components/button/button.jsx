@@ -44,8 +44,8 @@ export const Button = ({
             y2="40"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#E2B671" />
-            <stop offset="1" stop-color="#36A112" />
+            <stop stopColor="#E2B671" />
+            <stop offset="1" stopColor="#36A112" />
           </linearGradient>
         </defs>
       </svg>
