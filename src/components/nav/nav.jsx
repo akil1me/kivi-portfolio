@@ -16,10 +16,14 @@ export const Nav = ({ className }) => {
                 className="nav__link-text"
                 initial={{ x: 400, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: item.delay }}
+                transition={{
+                  duration: 1.5,
+                  delay: item.delay,
+                  type: "spring",
+                }}
               >
-                {item.title.split("").map((letter, index) => (
-                  <span key={index}>{letter}</span>
+                {item.title.split("").map((letter, i) => (
+                  <span key={i}>{letter}</span>
                 ))}
               </motion.span>
             </a>

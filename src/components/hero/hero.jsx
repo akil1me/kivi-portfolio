@@ -32,7 +32,7 @@ export const Hero = () => {
                 x: 400,
               }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, delay: 0.1 }}
+              transition={{ duration: 0.7, delay: 0.1, type: "spring" }}
               className="hero__conversion"
             >
               conversion
@@ -43,7 +43,7 @@ export const Hero = () => {
                 x: 500,
               }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
+              transition={{ duration: 1.5, delay: 0.2, type: "spring" }}
               className="hero__through"
             >
               <span>through</span>
@@ -64,7 +64,7 @@ export const Hero = () => {
                 x: 500,
               }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, delay: 0.3 }}
+              transition={{ duration: 1.5, delay: 0.3, type: "spring" }}
               className="hero__immersion"
             >
               immersion
@@ -76,7 +76,7 @@ export const Hero = () => {
                 x: 500,
               }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, delay: 0.3 }}
+              transition={{ duration: 1.5, delay: 0.3 }}
             >
               <Button
                 className="hero__button-bottom"
