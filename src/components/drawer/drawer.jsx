@@ -31,7 +31,7 @@ export const Drawer = ({ className = "" }) => {
 
               <motion.a
                 {...variants}
-                transition={{ duration: 0.5, delay: 0.6 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
                 className="drawer__info-link "
                 href="mailto:kiviwebstudio@gmail.com"
               >
@@ -39,7 +39,7 @@ export const Drawer = ({ className = "" }) => {
               </motion.a>
               <motion.a
                 {...variants}
-                transition={{ duration: 0.5, delay: 0.7 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
                 className="drawer__info-link"
                 href="tel:+998901234567"
               >

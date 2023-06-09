@@ -27,7 +27,7 @@
   border-radius: 60px;
   scroll-behavior: smooth;
   & > img {
-    transform: 0.3s;
+    transition: transform 0.3s linear;
     border-radius: 60px;
     height: 100% !important;
     object-fit: cover;
@@ -68,14 +68,14 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    left: -0.5px;
+    left: -0.62px;
     top: -0.5px;
   }
   & > .button__svg > rect {
-    width: 289px;
+    width: 288px;
     stroke-dashoffset: 800;
     stroke-dasharray: 800;
-    stroke-width: 2;
+    stroke-width: 1;
   }
 
   &:hover {

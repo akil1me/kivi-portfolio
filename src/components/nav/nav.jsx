@@ -17,7 +17,7 @@ export const Nav = ({ className }) => {
                 initial={{ x: 400, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{
-                  duration: 1.5,
+                  duration: 1,
                   delay: item.delay,
                   type: "spring",
                 }}

@@ -20,8 +20,16 @@ export const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.3 }}
           >
-            <Tilt tiltReverse scale={false} className="hero__img-content">
-              <Parallax bgImage={heroImg} className="hero__img"></Parallax>
+            <Tilt
+              scale={1.1}
+              transitionSpeed={1000}
+              className="hero__img-content"
+            >
+              <Parallax
+                strength={100}
+                bgImage={heroImg}
+                className="hero__img"
+              ></Parallax>
             </Tilt>
           </motion.div>
 
