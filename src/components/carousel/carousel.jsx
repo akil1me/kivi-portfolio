@@ -68,7 +68,7 @@ export const Carousel = () => {
         }}
         className="corousel__drag"
       >
-        drag and click
+        drag or click
       </motion.span>
     </div>
   );
