@@ -21,6 +21,11 @@
     stroke-dashoffset: -480;
   }
   &__svg {
+    position: absolute;
+    right: 0;
+    top: -0.5px;
+    bottom: 0;
+    left: -0.5px;
     pointer-events: none;
   }
   &__svg > rect {
@@ -34,13 +39,12 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 2px;
-    right: 2px;
+    left: 0;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
-    border-radius: 80px;
   }
 }
 .opacity-none,

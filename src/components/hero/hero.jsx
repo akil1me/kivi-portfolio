@@ -21,6 +21,7 @@ export const Hero = () => {
             transition={{ duration: 0.7, delay: 0.3 }}
           >
             <Tilt
+              tiltEnable={window.innerWidth < 500 ? false : true}
               scale={1.1}
               transitionSpeed={1000}
               className="hero__img-content"
@@ -84,7 +85,7 @@ export const Hero = () => {
                 x: 500,
               }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1.5, delay: 0.3 }}
+              transition={{ duration: 1, delay: 0.3, type: "spring" }}
             >
               <Button
                 className="hero__button-bottom"

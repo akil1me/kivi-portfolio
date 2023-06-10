@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { FreeMode, Parallax, Virtual, Zoom } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { motion } from "framer-motion";
 
 import "./carousel.scss";
 import "swiper/css";
@@ -8,12 +9,11 @@ import "swiper/css/free-mode";
 import "swiper/css/virtual";
 import "swiper/css/parallax";
 import "swiper/css/zoom";
+import { useCursor } from "../../hooks";
 
 export const Carousel = () => {
+  const mousePosition = useCursor();
   const swiperRef = useRef(null);
-  const slides = Array.from({ length: 10 }).map(
-    (_, index) => `Slide ${index + 1}`
-  );
 
   const handleScroll = () => {
     swiperRef.current.translateTo(-1 * window.scrollY);
@@ -57,6 +57,19 @@ export const Carousel = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      <motion.span
+        animate={{
+          x: mousePosition.x - 70,
+          y: mousePosition.y - 2000,
+        }}
+        transition={{
+          duration: 0.6,
+          type: "tween",
+        }}
+        className="corousel__drag"
+      >
+        drag and click
+      </motion.span>
     </div>
   );
 };

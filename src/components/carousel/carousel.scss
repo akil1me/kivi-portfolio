@@ -42,6 +42,31 @@
     }
   }
 }
+.corousel__swiper:hover ~ .corousel__drag {
+  width: 100px;
+  height: 100px;
+  font-size: 18px;
+}
+.corousel__drag {
+  pointer-events: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  font-size: 0px;
+  z-index: 2;
+  width: 0px;
+  height: 0px;
+  transition: width 0.7s, height 0.7s, font-size 0.7s;
+  background-color: #36a112;
+  border-radius: 50%;
+}
+@media screen and (max-width: 940px) {
+  .corousel__drag {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 500px) {
   .corousel {
