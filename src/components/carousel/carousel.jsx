@@ -59,8 +59,8 @@ export const Carousel = () => {
       </Swiper>
       <motion.span
         animate={{
-          x: mousePosition.x - 70,
-          y: mousePosition.y - 2000,
+          x: mousePosition.x - 130,
+          y: mousePosition.y - 2030,
         }}
         transition={{
           duration: 0.6,

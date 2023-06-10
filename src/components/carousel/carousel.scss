@@ -43,11 +43,18 @@
   }
 }
 .corousel__swiper:hover ~ .corousel__drag {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   font-size: 20px;
+  opacity: 1;
+}
+.corousel__swiper:active ~ .corousel__drag {
+  width: 50px;
+  height: 50px;
+  font-size: 0;
 }
 .corousel__drag {
+  padding: 20px;
   pointer-events: none;
   display: flex;
   text-align: center;
@@ -55,10 +62,11 @@
   align-items: center;
   position: fixed;
   font-size: 0px;
+  opacity: 0;
   z-index: 2;
   width: 0px;
   height: 0px;
-  transition: width 0.7s, height 0.7s, font-size 0.7s;
+  transition: width 0.7s, height 0.7s, font-size 0.7s, opacity 0.7s;
   background-color: #36a112;
   border-radius: 50%;
 }
