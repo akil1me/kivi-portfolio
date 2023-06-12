@@ -1,17 +1,17 @@
-import { useEffect, useRef } from "react";
+import { memo, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 import { FreeMode, Parallax, Virtual, Zoom } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { motion } from "framer-motion";
-
-import "./carousel.scss";
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/virtual";
-import "swiper/css/parallax";
-import "swiper/css/zoom";
 import { useCursor } from "../../hooks";
 
-export const Carousel = () => {
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/parallax";
+import "swiper/css/virtual";
+import "swiper/css/zoom";
+import "./carousel.scss";
+
+export const Carousel = memo(() => {
   const mousePosition = useCursor();
   const swiperRef = useRef(null);
 
@@ -72,4 +72,4 @@ export const Carousel = () => {
       </motion.span>
     </div>
   );
-};
+});
