@@ -40,21 +40,20 @@
   font-weight: 800;
   position: relative;
   font-size: 170px;
-  line-height: 0.7;
+  line-height: 0.8;
 }
 .hero__conversion {
   display: inline-block;
+  margin-left: 10%;
 }
 .hero__through {
   display: flex;
   align-items: center;
-  position: relative;
-  margin-left: -25%;
+  margin-left: -15%;
 }
 .hero__immersion {
   display: inline-block;
-  position: relative;
-  right: -20%;
+  margin-left: 25%;
 }
 .hero__button {
   margin-top: 40px;
@@ -62,6 +61,7 @@
   width: 289px;
   pointer-events: painted;
   color: #fff;
+  border-radius: 80px;
   background-color: #e2b671;
   z-index: 1;
   & > .button__svg {
@@ -164,6 +164,15 @@
   .vector {
     display: none;
   }
+  .hero__conversion {
+    margin-left: 5%;
+  }
+  .hero__through {
+    margin-left: -7%;
+  }
+  .hero__immersion {
+    margin-left: 15%;
+  }
 }
 @media screen and (max-width: 717px) {
   .hero__texts {
@@ -180,7 +189,7 @@
     display: none;
   }
   .hero__immersion {
-    position: static;
+    margin-left: 0;
   }
   .hero__button-bottom {
     margin-top: 20px;

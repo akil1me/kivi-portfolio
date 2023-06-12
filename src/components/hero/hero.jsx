@@ -61,7 +61,7 @@ export const Hero = () => {
                 color="#E2B671"
                 hover="#fff"
                 bg="#36A112"
-                bgLine="#fff"
+                bgLine="#ffffff"
                 width="289"
               >
                 Get in touch

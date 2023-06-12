@@ -5,12 +5,11 @@
   background-image: linear-gradient(
     to left,
     rgba(226, 182, 113, 0.7) 50%,
-    rgba(54, 161, 18, 0.6) 50%
+    rgba(54, 161, 18, 0.6) 50% 100%
   );
   filter: blur(172px);
   border-radius: 100px;
   z-index: -1;
-  transition: background 0.3s;
 
   animation-name: cursor;
   animation-duration: 1s;
