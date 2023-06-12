@@ -1,10 +1,9 @@
-import "./skills.scss";
+import { motion } from "framer-motion";
+import { useState } from "react";
 import { Button } from "../button";
 import { Container } from "../container";
 import { skillsList } from "./skills-list";
-import { useCursor } from "../../hooks";
-import { useState } from "react";
-import { motion } from "framer-motion";
+import "./skills.scss";
 
 export const Skills = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "./assets/styles/app.scss";
-import { Header, Hero, Skills, Slider } from "./components";
+import { Header, Hero, Skills, Slider, Works } from "./components";
 import { useCursor, useScroll } from "./hooks";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -33,6 +33,7 @@ const App = () => {
         <Hero />
         <Slider />
         <Skills />
+        <Works />
       </main>
     </>
   );
