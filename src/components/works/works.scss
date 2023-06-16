@@ -1,5 +1,5 @@
 .works {
-  margin-bottom: 200px;
+  margin-bottom: 300px;
 }
 
 .works__inner {
@@ -29,6 +29,9 @@
 }
 
 @media screen and (max-width: 724px) {
+  .works {
+    margin-bottom: 200px;
+  }
   .works__inner {
     font-size: 80px;
   }

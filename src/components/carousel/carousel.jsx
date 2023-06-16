@@ -10,6 +10,7 @@ import "swiper/css/parallax";
 import "swiper/css/virtual";
 import "swiper/css/zoom";
 import "./carousel.scss";
+import { skillsList } from "../skills/skills-list";
 
 export const Carousel = memo(() => {
   const mousePosition = useCursor();
@@ -41,18 +42,26 @@ export const Carousel = memo(() => {
         slidesPerView={"auto"}
         speed={1000}
       >
-        {[...new Array(10)].map((_, index) => (
+        {[...skillsList, ...skillsList, ...skillsList].map((texts, index) => (
           <SwiperSlide className="corousel__item" key={index}>
-            <div
-              data-swiper-parallax="8%"
-              className="corousel__img"
-              style={{
-                backgroundImage: `url(https://picsum.photos/id/${
-                  index + 50
-                }/600/600)`,
-              }}
-            >
-              <a className="corousel__link" href="/"></a>
+            <div className="corousel__block">
+              <div
+                data-swiper-parallax="8%"
+                className="corousel__img"
+                style={{
+                  backgroundImage: `url(https://picsum.photos/id/${
+                    index + 60
+                  }/600/600)`,
+                }}
+              >
+                <a className="corousel__link" href="/"></a>
+              </div>
+            </div>
+
+            <div className="corousel__texts">
+              <p>{texts.text}</p>
+              <h3>{texts.title}</h3>
+              <span>reed</span>
             </div>
           </SwiperSlide>
         ))}
@@ -60,7 +69,7 @@ export const Carousel = memo(() => {
       <motion.span
         animate={{
           x: mousePosition.x - 130,
-          y: mousePosition.y - 2030,
+          y: mousePosition.y - 2200,
         }}
         transition={{
           duration: 0.6,
