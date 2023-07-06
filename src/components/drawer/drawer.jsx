@@ -41,9 +41,9 @@ export const Drawer = ({ className = "" }) => {
                 {...variants}
                 transition={{ duration: 0.5, delay: 0.6 }}
                 className="drawer__info-link"
-                href="tel:+998901234567"
+                href="tel:+998716606060"
               >
-                +998901234567
+                +998 90 054 83 88
               </motion.a>
             </div>
           ) : null}

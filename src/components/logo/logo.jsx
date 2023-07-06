@@ -7,13 +7,13 @@ export const Logo = ({ className = "" }) => {
       {"Kivi".split("").map((letter, index) => (
         <span key={index}>{letter}</span>
       ))}
-      <img
+      {/* <img
         className="logo__img"
         src={logo}
         alt="site logo"
         width={60}
         height={60}
-      />
+      /> */}
     </a>
   );
 };

@@ -84,3 +84,28 @@
     rx: 20px;
   }
 }
+
+.form-modal > .footer__button {
+  position: static;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+.ant-modal-header {
+  background-color: #36a112ff !important;
+}
+.ant-modal-title {
+  color: #fff !important;
+  font-size: 24px !important;
+}
+.ant-modal-content {
+  background-color: #36a112ff !important;
+}
+.anticon-close {
+  color: #fff;
+  font-size: 20px;
+}
+.ant-modal-mask {
+  background-color: transparent !important;
+  backdrop-filter: blur(10px);
+}

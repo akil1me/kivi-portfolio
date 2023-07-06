@@ -8,10 +8,7 @@ export const Nav = ({ className }) => {
       <ul className="nav__list">
         {navList.map((item, index) => (
           <li className="nav__item" key={index}>
-            <a
-              className="nav__link"
-              href={`#${item.title.toLocaleLowerCase()}`}
-            >
+            <a className="nav__link" href={`/`}>
               <motion.span
                 className="nav__link-text"
                 initial={{ x: 400, opacity: 0 }}

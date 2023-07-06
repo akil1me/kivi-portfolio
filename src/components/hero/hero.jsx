@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import heroImg from "../../assets/images/hero-img.png";
 
 import "./hero.scss";
+import { Link } from "react-scroll";
 
 export const Hero = () => {
   return (
@@ -102,7 +103,12 @@ export const Hero = () => {
         </div>
       </Container>
 
-      <a className="hero__vector vector" href="#link">
+      <Link
+        className="hero__vector vector"
+        to="carusel"
+        smooth={true}
+        offset={-50}
+      >
         <span className="vector__border">
           <span className="vector__img">
             <svg
@@ -120,7 +126,7 @@ export const Hero = () => {
             </svg>
           </span>
         </span>
-      </a>
+      </Link>
     </section>
   );
 };

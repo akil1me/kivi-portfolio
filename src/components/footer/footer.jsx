@@ -4,10 +4,9 @@ import { Container } from "../container";
 
 import { TextField } from "@mui/material";
 import "./footer.scss";
+import { Form } from "../form";
 
 export const Footer = memo(() => {
-  const scrollY = useScroll();
-  // console.log(Math.floor(scrollY).toString().slice(2));
   return (
     <footer className="footer">
       <Container>
@@ -17,18 +16,10 @@ export const Footer = memo(() => {
               STAY UP TO BATE
             </h3>
             <p className="footer__info" data-aos="zoom-in-up">
-              get our newsletter
+              Contact us
             </p>
 
-            <form className="footer__form-form" data-aos="zoom-in-up">
-              <TextField
-                className="footer__input"
-                label="Email/phone"
-                variant="standard"
-                color=""
-              />
-              <button className="footer__button"></button>
-            </form>
+            <Form />
           </div>
 
           <div className="footer__address">
@@ -39,11 +30,11 @@ export const Footer = memo(() => {
             <div className="footer__address-content">
               <a
                 className="footer__address-link"
-                href="mailto:kivi@gmail.com"
+                href="mailto:kiviwebstudio@gmail.com"
                 target="_blank"
                 data-aos="zoom-in-up"
               >
-                KIVI@GMAIL.COM
+                kiviwebstudio@gmail.com
               </a>
               <a
                 className="footer__address-link"
@@ -51,7 +42,7 @@ export const Footer = memo(() => {
                 target="_blank"
                 data-aos="zoom-in-up"
               >
-                +998 (71) 660 60 60
+                +998 90 054 83 88
               </a>
               <a
                 className="footer__address-link"
@@ -59,7 +50,7 @@ export const Footer = memo(() => {
                 target="_blank"
                 data-aos="zoom-in-up"
               >
-                Tashkent.s A.Navoiy.k 89-uy
+                Tashkent.sh Sergeli 6
               </a>
             </div>
           </div>

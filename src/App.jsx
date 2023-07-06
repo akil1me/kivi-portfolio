@@ -6,6 +6,7 @@ import { useCursor, useScroll } from "./hooks";
 
 import "./assets/styles/app.scss";
 import "aos/dist/aos.css";
+import { Routes } from "./routes";
 
 const App = () => {
   const mousePosition = useCursor();
@@ -28,16 +29,7 @@ const App = () => {
         }}
       ></motion.div>
 
-      <Header />
-
-      <main>
-        <Hero />
-        <Slider />
-        <Skills />
-        <Works />
-      </main>
-
-      <Footer />
+      <Routes />
     </>
   );
 };
